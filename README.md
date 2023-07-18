@@ -18,6 +18,15 @@ service: 服务层模块，实现了业务逻辑处理，包括对数据模型�
 #### 使用说明：
 
 1.  数据库gpaydb
+2.  基础工具类
+
+![image](https://github.com/tank863523/ghostpay/assets/51073954/e9b65511-4602-45ec-900b-e9326967b87f)
+
+model位置
+![image](https://github.com/tank863523/ghostpay/assets/51073954/c75c920c-7b25-476c-bdaf-88e52417a77f)
+
+启动前配置自己的nacos端口：8848，修改配置application-dev.yml
+
 
 
 
