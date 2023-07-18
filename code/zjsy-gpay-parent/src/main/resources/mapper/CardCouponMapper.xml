@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.CardCouponMapper">
+
+    <resultMap id="BaseResultMap" type="generator.domain.CardCoupon">
+            <id property="couponId" column="coupon_id" jdbcType="OTHER"/>
+            <result property="couponName" column="coupon_name" jdbcType="VARCHAR"/>
+            <result property="couponInfo" column="coupon_info" jdbcType="VARCHAR"/>
+            <result property="collectedQuantity" column="collected_quantity" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        coupon_id,coupon_name,coupon_info,
+        collected_quantity,create_time,update_time
+    </sql>
+</mapper>

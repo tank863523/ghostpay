@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.MerchantMapper">
+
+    <resultMap id="BaseResultMap" type="generator.domain.Merchant">
+            <id property="merchantId" column="merchant_id" jdbcType="INTEGER"/>
+            <result property="merchantName" column="merchant_name" jdbcType="VARCHAR"/>
+            <result property="merchantAddress" column="merchant_address" jdbcType="VARCHAR"/>
+            <result property="merchantPhone" column="merchant_phone" jdbcType="VARCHAR"/>
+            <result property="industry" column="industry" jdbcType="VARCHAR"/>
+            <result property="userId" column="user_id" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        merchant_id,merchant_name,merchant_address,
+        merchant_phone,industry,user_id
+    </sql>
+</mapper>

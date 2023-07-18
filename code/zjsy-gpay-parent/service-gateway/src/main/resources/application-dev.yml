@@ -1,0 +1,19 @@
+server:
+  port: 8020
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+#          开启路由发现
+      routes:
+        - id: service-sample
+          uri: lb://service-sample
+          predicates:
+            - Path=/*/sample/**
+
+        - id: service-acl
+          uri: lb://service-acl
+          predicates:
+            - Path=/*/acl/**
